@@ -2,8 +2,52 @@ IAM
 
 Users: IAM users represent individual people or entities (such as applications or services) that interact with your AWS resources. Each user has a unique name and security credentials (password or access keys) used for authentication and access control.
 
+Purpose: Users represent individual people or entities, such as applications and services.
+
+Who/What Uses It: They are used by human users and applications.
+
+Credentials: Users use passwords and access keys for authentication.
+
+Typical Use Case: A common example is a developer logging into the AWS Console or an application accessing S3.
+
+
+
+
 Groups: IAM groups are collections of users with similar access requirements. Instead of managing permissions for each user individually, you can assign permissions to groups, making it easier to manage access control. Users can be added or removed from groups as needed.
+
+Purpose: Groups are a collection of users who share the same permissions.
+
+Who/What Uses It: Groups are for users only.
+
+Credentials: There are no specific credentials for groups; they are inherited from the users within them.
+
+Typical Use Case: An example is assigning "read-only access" to all interns at once by placing them in a single group.
+
+
+
 
 Roles: IAM roles are used to grant temporary access to AWS resources. Roles are typically used by applications or services that need to access AWS resources on behalf of users or other services. Roles have associated policies that define the permissions and actions allowed for the role.
 
+Purpose: Roles provide temporary access to resources with defined permissions.
+
+Who/What Uses It: Roles are used by AWS services, applications, and federated users.
+
+Credentials: They use temporary security tokens provided via the Security Token Service (STS).
+
+Typical Use Case: A typical use case is an EC2 instance that needs access to S3 without having to store permanent credentials
+
+
+
+
+
 Policies: IAM policies are JSON documents that define permissions. Policies specify the actions that can be performed on AWS resources and the resources to which the actions apply. Policies can be attached to users, groups, or roles to control access. IAM provides both AWS managed policies (predefined policies maintained by AWS) and customer managed policies (policies created and managed by you).
+
+Purpose: Policies define specific permissions using the JSON document format.
+
+Who/What Uses It: These documents are attached to users, groups, or roles to control what they can do.
+
+Credentials: Policies do not have credentials of their own.
+
+Typical Use Case: An example is granting a specific permission, like "s3:PutObject," to a particular role or group.
+
+
