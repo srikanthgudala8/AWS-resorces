@@ -1,0 +1,116 @@
+1. What is Amazon EC2?
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service providing secure, resizable compute capacity in the cloud. It allows you to access reliable, scalable infrastructure on demand.   
+
+Key Features & Benefits
+Reliability: Scale capacity within minutes with a Service Level Agreement (SLA) commitment of 99.99% availability.
+
+Security: Built on the AWS Nitro System, ensuring security is integrated into the foundation of the compute service.   
+
+Optimization: Flexible options to balance performance and cost, including:
+
+AWS Graviton-based instances
+
+Amazon EC2 Spot instances
+
+AWS Savings Plans
+
+2. EC2 Use Cases
+EC2 is designed to meet demanding business needs by delivering the broadest choice of compute, networking (up to 400 Gbps), and storage services.   
+
+General Business: Deliver secure, cost-effective infrastructure for diverse applications.
+
+High Performance Computing (HPC): Run HPC applications faster and more cost-effectively with on-demand capacity.
+
+Agile Development: Access environments in minutes and dynamically scale to benefit from pay-as-you-go pricing.   
+
+Machine Learning (ML): Optimize price-performance for ML projects with purpose-built infrastructure.
+
+
+Decoding Instance Names
+EC2 instances use a naming convention based on Family and Capabilities.
+
+Instance Families (The First Letter)
+C – Compute
+
+D – Dense storage   
+
+F – FPGA   
+
+G – GPU
+
+Hpc – High performance computing   
+
+I – I/O
+
+Inf – AWS Inferentia   
+
+M – Most scenarios (General Purpose)
+
+P – GPU (High performance)
+
+R – Random access memory (RAM)
+
+T – Turbo (Burstable performance)   
+
+Trn – AWS Trainium   
+
+U – Ultra-high memory   
+
+VT – Video transcoding
+
+X – Extra-large memory
+
+Additional Capabilities (The Suffix)
+a – AMD processors   
+
+g – AWS Graviton processors
+
+i – Intel processors
+
+d – Instance store volumes (fast, local storage)
+
+n – Network and EBS optimized
+
+e – Extra storage or memory
+
+z – High performance   
+
+5. EC2 Basics & Lifecycle
+Core Concepts
+Virtual Servers: Understanding that instances are virtualized servers running on physical hardware.   
+
+AMI (Amazon Machine Image): The template that contains the software configuration (OS, application server, applications) required to launch your instance.   
+
+Purchasing Options:
+
+On-Demand: Pay for compute capacity by the second/hour with no long-term commitment.   
+
+Reserved: Significant discount compared to On-Demand in exchange for a 1 or 3-year commitment.   
+
+Spot: Request spare compute capacity for up to 90% off the On-Demand price.
+
+Launching an Instance
+Console: Use the AWS Management Console to start the launch wizard.
+
+Configuration:
+
+Select an AMI (Operating System).
+
+Choose an Instance Type (e.g., t3.micro).
+
+Configure Network Settings (VPC, Subnet).   
+
+Add Storage (EBS volumes).
+
+Security:
+
+Security Groups: Act as a virtual firewall to control inbound and outbound traffic.   
+
+Key Pairs: Used to securely login to the instance (required for SSH).
+
+Managing Instances
+Lifecycle Actions: You can Start, Stop (like shutting down a laptop, keeps data), and Terminate (deletes the instance and typically its root storage) instances.   
+
+Monitoring: Track performance (CPU, Network I/O) via AWS CloudWatch.   
+
+Access: Connect to your instance securely using SSH (Linux/Mac) or RDP (Windows)
