@@ -1,1 +1,2 @@
 AWS Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets, such as EC2 instances, containers (ECS), and IP addresses. It acts as a single point of contact for your application, increasing its availability and fault tolerance.
+Elastic Ip =Static IP
