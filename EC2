@@ -114,3 +114,5 @@ Lifecycle Actions: You can Start, Stop (like shutting down a laptop, keeps data)
 Monitoring: Track performance (CPU, Network I/O) via AWS CloudWatch.   
 
 Access: Connect to your instance securely using SSH (Linux/Mac) or RDP (Windows)
+
+
